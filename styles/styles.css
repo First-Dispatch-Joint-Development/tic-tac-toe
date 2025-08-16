@@ -1,0 +1,77 @@
+body {
+    display: flex;                  /* Flexboxコンテナとして定義 */
+    justify-content: center;        /* コンテナを水平方向に沿って、中央に配置 */
+    align-items: center;            /* コンテナを垂直方向に沿って、中央に配置 */
+    height: 100vh;                  /* ビューポートの高さ100%、画面全体を占めるようにする */
+    margin: 0;                      /* 外側の余白を0に設定 */
+    font-family: sans-serif;        /* ゴシック体に設定 */
+    background-color: #ffffff;    /* 背景色 */
+}
+
+.container {
+    text-align: center;         /* テキストを中央揃え */
+}
+
+h1 {
+    font-size: 2.5em;           /* フォントサイズを親要素のフォントサイズの2.5倍 */
+    margin-bottom: 20px;        /* 下側の外余白を20ピクセル */
+}
+
+.board {
+    display: flex;              /* Flexboxコンテナとして定義 */
+    justify-content: center;    /* コンテナを水平方向に沿って、中央に配置 */
+    align-items: center;        /* コンテナを垂直方向に沿って、中央に配置 */
+}
+
+.grid-container {
+    display: grid;                              /* グリッドコンテナとして定義 */
+    grid-template-columns: repeat(3, 100px);    /* グリッドの列（幅100ピクセルの列を3つ） */
+    grid-template-rows: repeat(3, 100px);       /* グリッドの行（幅100ピクセルの行を3つ） */
+    gap: 0;                                     /* グリッドの行と列の間の間隔を0 */
+}
+
+.cell {
+    display: flex;                /* Flexboxコンテナとして定義 */
+    justify-content: center;      /* コンテナを水平方向に沿って、中央に配置 */
+    align-items: center;          /* コンテナを垂直方向に沿って、中央に配置 */
+    width: 100px;                 /* 幅を100ピクセル */
+    height: 100px;                /* 高さを100ピクセル */
+    box-sizing: border-box;       /* widthとheightの計算にボーダーを含める */
+    border: 2px solid black;    /* ボーダーを2ピクセルの実線、色は黒に設定 */
+    font-size: 3em;               /* フォントサイズを親要素の3倍 */
+}
+
+/* グリッド線のスタイル調整 */
+/* grid-container内の子要素であるcellに対してスタイルを適用 */
+/* :nth-child(n)は、特定の順番の子要素を選択する疑似クラス */
+/* つまり、.grid-container .cell:nth-child(1)は1番目のセルを示している */
+.grid-container .cell:nth-child(1),
+.grid-container .cell:nth-child(2),
+.grid-container .cell:nth-child(3),
+.grid-container .cell:nth-child(4),
+.grid-container .cell:nth-child(5),
+.grid-container .cell:nth-child(6),
+.grid-container .cell:nth-child(7),
+.grid-container .cell:nth-child(8),
+.grid-container .cell:nth-child(9) {
+    border: none;                         /* ボーダーをなくす */
+}
+
+.grid-container .cell:nth-child(2),
+.grid-container .cell:nth-child(5),
+.grid-container .cell:nth-child(8) {
+    border-left: 2px solid black;       /* 左側のボーダーを2ピクセルの実線、色を黒 */
+    border-right: 2px solid black;      /* 右側のボーダーを2ピクセルの実線、色を黒 */
+}
+
+.grid-container .cell:nth-child(4),
+.grid-container .cell:nth-child(5),
+.grid-container .cell:nth-child(6) {
+    border-top: 2px solid black;        /* 上側のボーダーを2ピクセルの実線、色を黒 */
+    border-bottom: 2px solid black;     /* 下側のボーダーを2ピクセルの実線、色を黒 */
+}
+
+.turn {
+    margin-top: 20px;       /* 上側の外余白を20ピクセルに設定 */
+    font-size: 1.2em;       /* フォントサイズを親要素の1.2倍 */
+}
