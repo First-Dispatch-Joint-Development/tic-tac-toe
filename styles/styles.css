@@ -75,3 +75,18 @@ h1 {
     margin-top: 20px;       /* 上側の外余白を20ピクセルに設定 */
     font-size: 1.2em;       /* フォントサイズを親要素の1.2倍 */
 }
+
+#restart {
+    font-size: 1.3em;       /* フォントサイズを親要素のフォントサイズの1.3倍 */
+    padding: 1em;           /* 要素内の余白を1倍 */
+    margin: 1em auto 0 auto; /* sotogawa yohaku top, right, bottom, left */
+}
+
+.unset{
+    /* 文字表示をしない */
+    font-size: 0;
+}
+
+.unset:hover{
+    font-size: 10vmin; /* vminは、縦横で小さいほうを基準としてサイズを決定？ */
+}
