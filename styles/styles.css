@@ -75,3 +75,49 @@ h1 {
     margin-top: 20px;       /* 上側の外余白を20ピクセルに設定 */
     font-size: 1.2em;       /* フォントサイズを親要素の1.2倍 */
 }
+
+#restart {
+    font-size: 1.3em;       /* フォントサイズを親要素のフォントサイズの1.3倍 */
+    padding: 1em;           /* 要素内の余白を1倍 */
+    margin: 1em auto 0 auto; /* sotogawa yohaku top, right, bottom, left */
+}
+
+#new-game {
+    font-size: 1.3em;       /* フォントサイズを親要素のフォントサイズの1.3倍 */
+    padding: 1em;           /* 要素内の余白を1倍 */
+    margin: 1em auto 0 auto; /* sotogawa yohaku top, right, bottom, left */
+}
+
+.popup{
+    position: absolute;
+    display: flex;              /* Flexboxコンテナとして定義 */
+    justify-content: center;    /* コンテナを水平方向に沿って、中央に配置 */
+    align-items: center;        /* コンテナを垂直方向に沿って、中央に配置 */
+    flex-direction: column;     /* Flexboxコンテナ内の要素を縦に並べるように配置 */
+    z-index: 2;                 /* 要素を重ねる際の優先順位を2に設定 数字が大きいほど前面に表示 */
+    height: 100%;               /* 要素のコンテンツ領域の高さを100%に設定 */
+    width: 100%;                /* 要素のコンテンツ領域の幅を100%に設定 */
+    background: #ffffff;      /* 背景色 */
+}
+
+/* classにpopupとhideが存在する場合 */
+.popup.hide{
+    display: none;             /* 要素の表示を無くす(要素がレイアウトに占める空間も無くなる) */
+}
+
+#message {
+    color: #000000;         /* 文字色を黒に設定 */        
+    text-align: center;      /* テキストを中央揃え */
+    font-size: 2em;         /* フォントサイズを親要素の3倍 */
+}
+
+
+.unset{
+    font-size: 0;  /* 文字表示をしない */
+}
+
+/* 要素にマウスカーソルを重ねた時(ホバーした時) */
+.unset:hover{
+    font-size: 5vmin; /* vminは、縦横で小さいほうを基準としてサイズを決定？ */
+    color: #c0c0c0; /* 文字色をsilverに設定 */
+}
