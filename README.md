@@ -7,7 +7,8 @@ HTML / CSS / JavaScript を用いて実装した三目並べアプリケーシ�
 5人チームでの共同開発を通じて、GitHub運用や役割分担を学ぶことを目的としています。
 
 ## 🎬デモンストレーション
-<video controls src="https://cdn.discordapp.com/attachments/1404172155964620951/1409087840284835922/2025-08-24_170727.mp4?ex=68b35b10&is=68b20990&hm=3d3e3ab698ecda9ac90cea44c2240fee2a654ac0534e6cc1a3130d5da5e895cc&" title="Title"></video>
+https://github.com/user-attachments/assets/6ee23ca6-4293-457b-9576-2c0fbaa17c2b
+
 
 ## 📖 概要
 
