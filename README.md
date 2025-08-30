@@ -1,6 +1,6 @@
 # ⭕️❌Tic-Tac-Toe（三目並べ）
-HTML, CSS, JavaScriptを活用した、三目並べで遊べるサイトです。
-(デプロイ先のURLを挿入予定)
+HTML, CSS, JavaScriptを活用した、三目並べで遊べるサイトです。    
+URL: https://first-dispatch-joint-development.github.io/tic-tac-toe/
 
 ## 📍目的
 HTML / CSS / JavaScript を用いて実装した三目並べアプリケーションです。  
