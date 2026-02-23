@@ -12,7 +12,7 @@ https://github.com/user-attachments/assets/6ee23ca6-4293-457b-9576-2c0fbaa17c2b
 
 ## 📖 概要
 
-ソフトウェア開発は、HTML, CSS, JavaScriptを活用したおみくじアプリケーションです。
+HTML, CSS, JavaScriptを使用し開発した三目並べアプリケーションです。
 
 ### 主な機能
 - 3×3 マスの対戦（プレイヤー vs プレイヤー）
